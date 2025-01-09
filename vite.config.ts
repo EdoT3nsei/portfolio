@@ -6,6 +6,7 @@ import { NodeGlobalsPolyfillPlugin } from '@esbuild-plugins/node-globals-polyfil
 import { NodeModulesPolyfillPlugin } from '@esbuild-plugins/node-modules-polyfill';
 
 export default defineConfig({
+  base: '/<portfolio>/', // Replace <REPOSITORY_NAME> with your actual repository name
   plugins: [
     react(),
     markdown()
