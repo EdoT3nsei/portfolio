@@ -35,8 +35,9 @@ const AboutPage: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 my-12">
             <div className="text-center">
               <Briefcase className="w-8 h-8 mx-auto mb-4 text-red-700" />
-              <h3 className="font-semibold mb-2">Experience</h3>
-                <p className="text-gray-600">2 years in <a href="https://www.nd-creation-visuelle.ch/" className="text-red-700" target="_blank">ND Création Visuelle</a></p>
+              <h3 className="font-semibold mb-2">Experiences</h3>
+                <p className="text-gray-600">Content creator and community manager at <a href="https://www.nd-creation-visuelle.ch/" className="text-red-700" target="_blank">ND Création Visuelle</a></p>
+                <p className="text-gray-600 pt-2">Artist assistant at <a href="https://mouvement.studio/" className="text-red-700" target="_blank">Mouvement Studio</a></p>
             </div>
             <div className="text-center">
               <Award className="w-8 h-8 mx-auto mb-4 text-red-700" />
@@ -46,8 +47,8 @@ const AboutPage: React.FC = () => {
             <div className="text-center">
               <GraduationCap className="w-8 h-8 mx-auto mb-4 text-red-700" />
               <h3 className="font-semibold mb-2">Education</h3>
-              <p className="text-gray-600">CFC in mediamatic with professional maturity</p>
               <p className="text-gray-600">Bachelor in media engenieering</p>
+              <p className="text-gray-600 pt-2">CFC in mediamatic with professional maturity</p>
             </div>
           </div>
 
