@@ -10,6 +10,7 @@ export default defineConfig({
     react(),
     markdown()
   ],
+  base: '/portfolio/',
   resolve: {
     alias: {
       '@': '/src',
