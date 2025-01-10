@@ -58,7 +58,7 @@ export const projects: Project[] = [
     category: "Graphic Design and Motion Design",
     image: cover5,
     description: "Work carried out as part of the competition launched by the Baleinev festival for their digital communication.",
-    fullDescription: "With Nicolas and Leo, we created a website for the Empire in the Star Wars universe. The website is a fun way to present the Empire's annual report with data visualizations and animations.",
+    fullDescription: "Work carried out as part of the competition launched by the Baleinev festival for their digital communication.",
     client: "Baleinev Festival",
     date: "2024",
     tools: ["Adobe Illustrator", "Adobe Photoshop", "Adobe After Effects"],

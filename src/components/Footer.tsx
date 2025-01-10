@@ -8,13 +8,13 @@ const Footer: React.FC = () => {
         <div className="flex justify-between items-center">
           <p className="text-gray-500 text-sm">© 2024 Emile's Portfolio. All rights reserved.</p>
           <div className="flex space-x-6">
-            <a href="https://github.com/EdoT3nsei" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-black">
+            <a href="https://github.com/EdoT3nsei" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-red-800">
               <Github size={20} />
             </a>
-            <a href="https://www.linkedin.com/in/emile-donzel/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-black">
+            <a href="https://www.linkedin.com/in/emile-donzel/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-red-800">
               <Linkedin size={20} />
             </a>
-            <a href="mailto:emiledonzel@bluewin.ch" className="text-gray-500 hover:text-black">
+            <a href="mailto:emiledonzel@bluewin.ch" className="text-gray-500 hover:text-red-800">
               <Mail size={20} />
             </a>
           </div>
