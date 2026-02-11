@@ -10,7 +10,6 @@ export default defineConfig({
     react(),
     markdown()
   ],
-  base: '/portfolio/',
   resolve: {
     alias: {
       '@': '/src',
@@ -26,5 +25,7 @@ export default defineConfig({
         NodeModulesPolyfillPlugin()
       ]
     }
-  }
+  },
+  // Use relative asset paths so Netlify serves the actual JS/CSS files
+  base: './',
 });
