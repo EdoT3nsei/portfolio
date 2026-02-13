@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Award, Briefcase, GraduationCap } from 'lucide-react';
-import profilePicture from '../assets/images/profile_picture.jpeg';
+import { Award, Briefcase, GraduationCap, FileText, Mail, Coffee } from 'lucide-react';
+import profilePicture from '../assets/images/profile_picture.jpg';
+import CV from '../assets/cv/cv_emileDonzel.pdf';
 
 const AboutPage: React.FC = () => {
   return (
@@ -27,12 +28,33 @@ const AboutPage: React.FC = () => {
 
         <div className="prose prose-lg mx-auto">
           <p className="mb-6">
-            My name is Emile. I am 22 years old media engenieer from Switzerland.
-            I'm passionate about creating digital experiences that are both beautiful and functional.
-            
+            My name is Emile. I am 23 years old media engenieer from Switzerland.
+            I'm passionate about creating digital experiences that are both beautiful and functional.      
+          </p>
+          <p className="mb-6">
+            Outside of work, I enjoy playing video games, board games and role-playing games. When I'm not gaming, you can find me prepare acitvities for my role as a scout trainer.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 my-12">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center my-8 not-prose">
+            <a
+              href={CV}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-[#687451] hover:bg-[#55603b] transition-colors"
+            >
+              My Resume
+              <FileText className="w-5 h-5 ml-2" />
+            </a>
+            <a
+              href="mailto:emiledonzel@bluewin.ch"
+              className="inline-flex items-center justify-center px-6 py-3 border border-[#687451] text-base font-medium rounded-md text-[#687451] bg-white hover:bg-gray-50 transition-colors"
+            >
+              Let's have a coffee
+              <Coffee className="w-5 h-5 ml-2" />
+            </a>
+          </div>
+
+          {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8 my-12">
             <div className="text-center">
               <Briefcase className="w-8 h-8 mx-auto mb-4 text-red-700" />
               <h3 className="font-semibold mb-2">Experiences</h3>
@@ -50,7 +72,7 @@ const AboutPage: React.FC = () => {
               <p className="text-gray-600">Bachelor in media engenieering</p>
               <p className="text-gray-600 pt-2">CFC in mediamatic with professional maturity</p>
             </div>
-          </div>
+          </div> */}
 
             {/* <h2 className="text-2xl font-bold mb-4">Skills & Expertise</h2>
             <ul className="list-disc pl-6 mb-6">

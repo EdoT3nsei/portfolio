@@ -13,7 +13,7 @@ const ProjectDetailPage: React.FC = () => {
     return (
       <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
         <h1 className="text-2xl font-bold">Project not found</h1>
-        <Link to="/projects" className="text-red-600 hover:text-red-500">
+        <Link to="/projects" className="text-[#687451] hover:text-[#55603b]">
           Back to Projects
         </Link>
       </div>
@@ -43,7 +43,7 @@ const ProjectDetailPage: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           <div className="lg:col-span-2">
             <h1 className="text-4xl font-bold mb-4">{project.title}</h1>
-            <p className="text-xl text-gray-600 mb-8">{project.fullDescription}</p>
+            <p className="text-base text-gray-600 mb-8">{project.fullDescription}</p>
 
             <h2 className="text-2xl font-bold mb-6">Project Gallery</h2>
             {project.gallery && (
@@ -57,15 +57,26 @@ const ProjectDetailPage: React.FC = () => {
               
               <div className="space-y-4">
                 <div className="flex items-center">
-                  <User className="h-5 w-5 text-red-700 mr-3" />
+                  {/* <User className="h-5 w-5 text-[#687451] mr-3" /> */}
                   <div>
                     <p className="text-sm text-gray-600">Client</p>
-                    <p className="font-medium">{project.client}</p>
+                    {project.clientUrl && project.client ? (
+                      <a
+                        href={project.clientUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-medium text-[#687451] hover:text-[#55603b]"
+                      >
+                        {project.client}
+                      </a>
+                    ) : (
+                      <p className="font-medium">{project.client ?? '—'}</p>
+                    )}
                   </div>
                 </div>
 
                 <div className="flex items-center">
-                  <Calendar className="h-5 w-5 text-red-700 mr-3" />
+                 {/* <Calendar className="h-5 w-5 text-[#687451] mr-3" /> */}
                   <div>
                     <p className="text-sm text-gray-600">Date</p>
                     <p className="font-medium">{project.date}</p>
@@ -73,14 +84,14 @@ const ProjectDetailPage: React.FC = () => {
                 </div>
 
                 <div className="flex items-center">
-                  <Wrench className="h-5 w-5 text-red-700 mr-3" />
+                  {/* <Wrench className="h-5 w-5 text-[#687451] mr-3" /> */}
                   <div>
                     <p className="text-sm text-gray-600">Tools</p>
                     <div className="flex flex-wrap gap-2 mt-2">
                       {project.tools?.map((tech, index) => (
                         <span
                           key={index}
-                          className="px-3 py-1 bg-red-100 text-red-700 rounded-full text-sm"
+                          className="px-3 py-1 bg-[#f0f4e8] text-[#687451] rounded-full text-sm"
                         >
                           {tech}
                         </span>
@@ -91,7 +102,7 @@ const ProjectDetailPage: React.FC = () => {
 
                 {project.collaborators && (
   <div className="flex items-center">
-    <User className="h-5 w-5 text-red-700 mr-3" />
+    {/* <User className="h-5 w-5 text-[#687451] mr-3" /> */}
     <div>
       <p className="text-sm text-gray-600">Collaborators</p>
       <div className="flex flex-wrap gap-2 mt-2">
@@ -101,7 +112,7 @@ const ProjectDetailPage: React.FC = () => {
             href={collaborator.website}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-3 py-1 bg-red-100 text-red-700 rounded-full text-sm hover:bg-red-200 transition-colors"
+            className="px-3 py-1 bg-[#f0f4e8] text-[#687451] rounded-full text-sm hover:bg-[#e0e4d8] transition-colors"
           >
             {collaborator.name}
           </a>

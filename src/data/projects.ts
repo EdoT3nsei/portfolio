@@ -7,6 +7,13 @@ import cover4 from '../assets/images/empire_cover.png';
 import cover5 from '../assets/images/baleinev_2.png';
 import cover6 from '../assets/images/beer_cover.png';
 
+import thumbnail1 from '../assets/images/map_1-thumb.webp';
+import thumbnail2 from '../assets/images/badge_kolding_24-thumb.webp';
+import thumbnail3 from '../assets/images/terravaud_1-thumb.webp';
+import thumbnail4 from '../assets/images/empire_cover-thumb.webp';
+import thumbnail5 from '../assets/images/baleinev_2-thumb.webp';
+import thumbnail6 from '../assets/images/beer_cover-thumb.webp';
+
 //1
 import photoTerravaud1 from '../assets/images/terravaud_2.png';
 import videoTerravaud from '../assets/videos/video_terravaud.mp4';
@@ -34,9 +41,11 @@ export const projects: Project[] = [
     title: "TerraVaud",
     category: "Web Application",
     image: cover3,
+    thumbnail: thumbnail3,
     description: "User interface design for a lifestyle mobile application.",
     fullDescription: "A modern mobile app UI design for a lifestyle and wellness platform. The project focused on creating an intuitive user experience with clean interfaces and engaging micro-interactions.",
     client: "School Project - HEIG-VD",
+    clientUrl: "https://heig-vd.ch/",
     date: "2024",
     tools: ["Figma", "Adobe Premiere Pro", "Adobe Illustrator", "Adobe InDesign", "VueJS", "Laravel"],
     gallery: [
@@ -45,9 +54,9 @@ export const projects: Project[] = [
       cover3
     ],
     collaborators: [
-      { name: "Maxime Peretti", website: "https://bento.me/maxime-peretti" },
+      { name: "Maxime Peretti", website: "https://www.linkedin.com/in/maxime-peretti/" },
       { name: "Léo Winterhalter", website: "https://www.linkedin.com/in/leo-winterhalter/" },
-      { name: "Nicolas Aerny", website: "https://www.linkedin.com/in/nicolasaerny/" },
+      { name: "Nicolas Aerny", website: "https://nicolasaerny.ch/" },
       { name: "Clément Künzi", website: "https://clement-kunzi.ch/" }
     ]    
         
@@ -57,9 +66,11 @@ export const projects: Project[] = [
     title: "Baleinev Festival Communication",
     category: "Graphic Design and Motion Design",
     image: cover5,
+    thumbnail: thumbnail5,
     description: "Work carried out as part of the competition launched by the Baleinev festival for their digital communication.",
     fullDescription: "Work carried out as part of the competition launched by the Baleinev festival for their digital communication.",
     client: "Baleinev Festival",
+    clientUrl: "https://baleinev.ch/",
     date: "2024",
     tools: ["Adobe Illustrator", "Adobe Photoshop", "Adobe After Effects"],
     gallery: [
@@ -81,9 +92,11 @@ export const projects: Project[] = [
     title: "Imperial Annual Report",
     category: "Web site",
     image: cover4,
+    thumbnail: thumbnail4,
     description: "Fun website based on the Star Wars universe.",
     fullDescription: "With Nicolas and Leo, we created a website for the Empire in the Star Wars universe. The website is a fun way to present the Empire's annual report with data visualizations and animations.",
     client: "School Project - HEIG-VD",
+    clientUrl: "https://heig-vd.ch/",
     date: "2024",
     tools: ["Figma", "JavaScript", "D3Js"],
     gallery: [
@@ -92,7 +105,7 @@ export const projects: Project[] = [
       cover4
     ],
     collaborators: [
-      { name: "Nicolas Aerny", website: "https://www.linkedin.com/in/nicolasaerny/" },
+      { name: "Nicolas Aerny", website: "https://nicolasaerny.ch/" },
       { name: "Leo Emeri", website: "https://www.linkedin.com/in/leo-emeri/" }
     ] 
   },
@@ -101,10 +114,11 @@ export const projects: Project[] = [
     title: "Map illustrations",
     category: "Illustration",
     image: cover1,
+    thumbnail: thumbnail1,
     description: "Maps that I've created for various personal projects.",
     fullDescription: "I'v always been fascinated by maps and the stories they tell. Here are a few examples of maps that I've created for personal projects.",
     client: "Private project",
-    date: "2019-2022",
+    date: "From 2019",
     tools: ["Traditional drawing material", "Adobe Photoshop"],
     gallery: [
       cover1,
@@ -112,28 +126,31 @@ export const projects: Project[] = [
       photoMap3
     ]
   },
-  {
-    id: 3,
-    title: "Kolding 2024 scouting Badge",
-    category: "Graphic Design",
-    image: cover2,
-    description: "A badge designed for a scout camp in Kolding, Denmark.",
-    fullDescription: "A complete website redesign focusing on user experience and modern design principles. The project involved creating a responsive layout, implementing smooth animations, and ensuring optimal performance across all devices.",
-    client: "Groupe Scout les Troubadours",
-    date: "2024",
-    tools: ["Traditional drawing material", "Adobe Illustrator"],
-    gallery: [
-      cover2
-    ]
-  },
+  // {
+  //   id: 3,
+  //   title: "Kolding 2024 scouting Badge",
+  //   category: "Graphic Design",
+  //   image: cover2,
+  //   thumbnail: thumbnail2,
+  //   description: "A badge designed for a scout camp in Kolding, Denmark.",
+  //   fullDescription: "A complete website redesign focusing on user experience and modern design principles. The project involved creating a responsive layout, implementing smooth animations, and ensuring optimal performance across all devices.",
+  //   client: "Groupe Scout les Troubadours",
+  //   date: "2024",
+  //   tools: ["Traditional drawing material", "Adobe Illustrator"],
+  //   gallery: [
+  //     cover2
+  //   ]
+  // },
   {
     id: 6,
     title: "Agence Brassicole",
     category: "Graphic Design",
     image: cover6,
+    thumbnail: thumbnail6,
     description: "A fake brassery graphic identity that I'v created for my CFC final project.",
     fullDescription: "As part of my CFC final project, I created a graphic identity for a fake brassery. The project included creating a logo and beer labels based on geological typology.",
     client: "School Project - CPNE",
+    clientUrl: "https://www.cpne.ch/",
     date: "2021",
     tools: ["Traditional drawing material", "Adobe Illustrator", "Adobe Photoshop"],
     gallery: [

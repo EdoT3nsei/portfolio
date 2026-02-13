@@ -18,15 +18,15 @@ const Hero: React.FC = () => {
             >
               <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
                 <span className="block">Emile Donzel</span>
-                <span className="block text-red-700">Media engineer</span>
+                <span className="block text-[#687451]">Media engineer</span>
               </h1>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-               Hey, I'm Emile, a 22 years old media engenieer from Switzerland. I'm passionate about creating digital experiences that are both beautiful and functional. I'm specialized in graphic design, and UX/UI solutions.
+               Hey, I'm Emile, a 23 years old media engenieer from Switzerland. I'm passionate about creating digital experiences that are both beautiful and functional. I'm specialized in graphic design, and UX/UI solutions.
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <Link
                   to="/projects"
-                  className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-700 hover:bg-red-700 md:text-lg"
+                  className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-[#687451] hover:bg-[#55603b] md:text-lg"
                 >
                   View Projects
                   <ArrowRight className="ml-2 h-5 w-5" />
@@ -37,11 +37,11 @@ const Hero: React.FC = () => {
         </div>
       </div>
       <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-        <img
+        {/* <img
           className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
           src={homecover}
           alt="Design workspaceeeee"
-        />
+        /> */}
       </div>
     </div>
   );

@@ -18,7 +18,6 @@ const FeaturedWork: React.FC = () => {
         >
           <div className="text-center">
             <h2 className="text-3xl font-bold text-gray-900">Featured Work</h2>
-            <p className="mt-4 text-xl text-gray-600">Recent projects that showcase my expertise</p>
           </div>
 
           <div className="mt-12 grid gap-8 lg:grid-cols-2">

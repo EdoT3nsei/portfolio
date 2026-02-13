@@ -30,8 +30,8 @@ const Services: React.FC = () => {
           transition={{ delay: 0.3 }}
         >
           <div className="text-center">
-            <h2 className="text-3xl font-bold text-gray-900">Services</h2>
-            <p className="mt-4 text-xl text-gray-600">Things that i like to do</p>
+            <h2 className="text-3xl font-bold text-gray-900">What I do</h2>
+            {/* <p className="mt-4 text-xl text-gray-600">Things that i like to do</p> */}
           </div>
 
           <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -43,7 +43,7 @@ const Services: React.FC = () => {
                 transition={{ delay: index * 0.1 }}
                 className="bg-gray-50 p-8 rounded-lg"
               >
-                <div className="text-red-700">{service.icon}</div>
+                <div className="text-[#687451]">{service.icon}</div>
                 <h3 className="mt-4 text-xl font-semibold text-gray-900">{service.title}</h3>
                 <p className="mt-2 text-gray-600">{service.description}</p>
               </motion.div>

@@ -8,9 +8,11 @@ export interface Project {
   title: string;
   category: string;
   image: string;
+  thumbnail: string;
   description: string;
   fullDescription?: string;
   client?: string;
+  clientUrl?: string;
   date?: string;
   tools?: string[];
   gallery?: string[];
