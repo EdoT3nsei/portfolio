@@ -17,4 +17,5 @@ export interface Project {
   tools?: string[];
   gallery?: string[];
   collaborators?: Collaborator[];
+  projectUrl?: string;
 }

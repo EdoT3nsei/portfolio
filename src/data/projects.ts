@@ -9,6 +9,8 @@ import cover6 from '../assets/images/beer_cover.png';
 import cover7 from '../assets/images/firewatch.jpg';
 import cover8 from '../assets/images/sed_cover.png';
 import cover9 from '../assets/images/coachlab_cover.jpg';
+import cover10 from '../assets/images/vr_forge_1.png';
+
 
 import thumbnail1 from '../assets/images/map_1-thumb.webp';
 import thumbnail2 from '../assets/images/badge_kolding_24-thumb.webp';
@@ -55,6 +57,9 @@ import coachlab2 from '../assets/images/coachlab_2.jpeg';
 import coachlab3 from '../assets/images/coachlab_3.png';
 import coachlab4 from '../assets/images/coachlab_4.jpeg';
 
+//10
+import vrForge1 from '../assets/images/vr_forge_2.png';
+
 export const projects: Project[] = [
     {
     id: 8,
@@ -80,6 +85,7 @@ export const projects: Project[] = [
     thumbnail: cover9,
     description: "Communication campaign for the UEFA Women's Euro 2025.",
     fullDescription: "As part of a school project, we where mandated by Amzaon and the UEFA to create something to promote female coaches in football. We created a communication campaign called CoachLab, which notably included a companion webapp.",
+    projectUrl: "https://coachlab-demo.netlify.app/",
     client: "School Project - HEIG-VD / Amazon / UEFA Women's Euro 2025",
     clientUrl: "https://pi25.heig-vd.ch/en",
     date: "2025",
@@ -96,6 +102,23 @@ export const projects: Project[] = [
       { name: "Loïc Monnerat", website: "https://www.linkedin.com/in/loic-monnerat/" },
       { name: "Tristan Montanari", website: "https://www.linkedin.com/in/tristan-montanari/" }
     ]       
+  },
+  {
+    id: 10,
+    title: "VR Forge Game",
+    category: "VR Game Design",
+    image: cover10,
+    thumbnail: cover10,
+    description: "VR game design for a virtual forge experience.",
+    fullDescription: "I designed and prototyped a VR game experience that simulates working in a forge. The game allows players to interact with virtual tools and materials to create their own virtual swords. Realised within 3 weeks using Aframe, the project involved designing the game mechanics, and implementing the game in a VR environment. You can try the demo by clicking the link below. The game is best experienced with a VR headset, but it can also be played on a desktop computer using mouse controls.",
+    projectUrl : "https://onivers.com/vr/emile/",
+    client: "School Project - HEIG-VD",
+    clientUrl: "https://heig-vd.ch/",
+    date: "2025",
+    tools: ["JavaScript", "Vue", "AFrame"],
+    gallery: [
+      cover10, vrForge1
+    ]    
   },
   {
     id: 1,
@@ -154,6 +177,7 @@ export const projects: Project[] = [
     thumbnail: thumbnail4,
     description: "Fun website based on the Star Wars universe.",
     fullDescription: "With Nicolas and Leo, we created a website for the Empire in the Star Wars universe. The website is a fun way to present the Empire's annual report with data visualizations and animations.",
+    projectUrl: "https://empire-annual-report.netlify.app/",
     client: "School Project - HEIG-VD",
     clientUrl: "https://heig-vd.ch/",
     date: "2024",

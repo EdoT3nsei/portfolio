@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, Calendar, User, Wrench } from 'lucide-react';
+import { ArrowLeft, Calendar, User, Wrench, ExternalLink } from 'lucide-react';
 import { projects } from '../data/projects';
 import ProjectGallery from '../components/projects/ProjectGallery';
 
@@ -44,7 +44,17 @@ const ProjectDetailPage: React.FC = () => {
           <div className="lg:col-span-2">
             <h1 className="text-4xl font-bold mb-4">{project.title}</h1>
             <p className="text-base text-gray-600 mb-8">{project.fullDescription}</p>
-
+            {project.projectUrl && (
+                <a
+                  href={project.projectUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mb-10 inline-flex items-center gap-2 px-6 py-3 bg-[#687451] text-white rounded-lg hover:bg-[#55603b] transition-colors font-medium"
+                >
+                  <span>See the project online</span>
+                  <ExternalLink className="h-4 w-4" />
+                </a>
+              )}
             <h2 className="text-2xl font-bold mb-6">Project Gallery</h2>
             {project.gallery && (
               <ProjectGallery images={project.gallery} title={project.title} />
@@ -122,6 +132,8 @@ const ProjectDetailPage: React.FC = () => {
   </div>
 )}
               </div>
+
+              
             </div>
           </div>
         </div>
