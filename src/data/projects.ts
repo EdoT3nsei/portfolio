@@ -177,7 +177,7 @@ export const projects: Project[] = [
     thumbnail: thumbnail4,
     description: "Fun website based on the Star Wars universe.",
     fullDescription: "With Nicolas and Leo, we created a website for the Empire in the Star Wars universe. The website is a fun way to present the Empire's annual report with data visualizations and animations.",
-    projectUrl: "https://empire-annual-report.netlify.app/",
+    // projectUrl: "https://empire-annual-report.netlify.app/",
     client: "School Project - HEIG-VD",
     clientUrl: "https://heig-vd.ch/",
     date: "2024",
