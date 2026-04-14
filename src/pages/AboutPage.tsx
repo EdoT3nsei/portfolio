@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Award, Briefcase, GraduationCap, FileText, Mail, Coffee } from 'lucide-react';
 import profilePicture from '../assets/images/profile_picture.jpg';
-import CV from '../assets/cv/cv_emileDonzel.pdf';
+import CV from '../assets/cv/resume_emileDonzel.pdf';
 
 const AboutPage: React.FC = () => {
   return (
